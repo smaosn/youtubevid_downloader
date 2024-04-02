@@ -3,8 +3,8 @@ from pytube import YouTube, Search
 #yt = YouTube("https://www.youtube.com/watch?v=ZU2KtCDZjGM&ab_channel=KennethAcoustic")
 yt = YouTube("https://www.youtube.com/watch?v=7dZmeh_28Eo&ab_channel=BusinessInsider")
 
-video_options = yt.streams.filter(adaptive=True)
-#print(video_options)
+video_options = yt.streams.filter(adaptive=True, file_extension='')
+#print(type(video_options))
 
 video_options2 = yt.streams.filter(file_extension='mp4')
 #print(video_options2)
